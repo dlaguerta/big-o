@@ -22,6 +22,7 @@ def largest?(array, value)
   return true
 end
 ```
+Answer:O(n), linear
 
 Snippet 2 - Big O:
 ```ruby
@@ -36,6 +37,7 @@ def info_dump(customers)
   end
 end
 ```
+Answer:O(n), linear, because the same amount of time will grow for each element processed
 
 Snippet 3 - Big O:
 ```ruby
@@ -43,6 +45,7 @@ def first_element_is_red?(array)
   array[0] == 'red' ? true : false
 end
 ```
+Answer:O(1), constant because it takes the same amount of time to find array[0] == red? no matter the amount of data
 
 Snippet 4 - Big O:
 ```ruby
@@ -56,6 +59,7 @@ def duplicates?(array)
   false
 end
 ```
+Answer:O(n^2), quadratic; because each loop iterates over the length of the array, adding more and more time
 
 Snippet 5 - Big O:
 ```ruby
@@ -68,6 +72,7 @@ words.each do |word|
   end
 end
 ```
+Answer: O(n*m) because each loop runs linearly
 
 Snippet 6 - Big O:
 ```ruby
@@ -77,6 +82,7 @@ def print_array(array)
     array.each {|num| puts num}
 end
 ```
+Answer: O(n), linear
 
 Snippet 7 - Big O:
 ```ruby
@@ -91,6 +97,7 @@ Snippet 7 - Big O:
     num[i+1] = key
 end
 ```
+Answer: O(n^2), because insertion sort is quadratic and adds even more time for every element added
 
 Snippet 8 - Big O:
 ```ruby
@@ -103,3 +110,4 @@ n.times do |i|
   a[i], a[index_min] = a[index_min], a[i] if index_min != i
 end
 ```
+Answer: O(n^2)
